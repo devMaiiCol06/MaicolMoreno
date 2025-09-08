@@ -1,4 +1,4 @@
-import typewriter from "/src/scripts/functions/typewriter.js"; //Importar la funcion de typewriter
+import typewriter from "./functions/typewriter.js"; //Importar la funcion de typewriter
 
 document.addEventListener("DOMContentLoaded", () => { // Esperar que todo el documento html este cargado
     typewriter(); //Llamar a la funcion
