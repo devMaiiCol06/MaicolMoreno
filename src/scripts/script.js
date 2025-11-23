@@ -1,4 +1,4 @@
-import typewriter from "./functions/typewriter.js"; //Importar la funcion de typewriter
+import typewriter from "./functions/typewriter.js";
 
 document.addEventListener("DOMContentLoaded", () => { // Esperar que todo el documento html este cargado
     typewriter(); //Llamar a la funcion
@@ -49,22 +49,21 @@ document.addEventListener("DOMContentLoaded", () => { // Esperar que todo el doc
         item.addEventListener("click", () => setActiveIcon(index));
     });
 
-
     const skillsCategories = document.querySelectorAll(".skillCategory");
     const categoryContainer = document.querySelectorAll(
         ".skillCategoryContent"
     );
 
     skillsCategories.forEach((category, index) => {
-        category.addEventListener('click', () => {
-            skillsCategories.forEach(category => {
-                category.classList.remove('selected');
-            })
+        category.addEventListener("click", () => {
+            skillsCategories.forEach((category) => {
+                category.classList.remove("selected");
+            });
             category.classList.add("selected");
             categoryContainer.forEach((container) => {
-                container.classList.add('hidden');
-            })
+                container.classList.add("hidden");
+            });
             categoryContainer[index].classList.remove("hidden");
-        })
-    })
+        });
+    });
 });
