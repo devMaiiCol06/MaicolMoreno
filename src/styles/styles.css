@@ -349,11 +349,11 @@ section {
 
 .presentationImage {
     width: 100%;
-    max-width: 430px;
+    max-width: 280px;
     height: auto;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 15px;
     right: 0;
     margin: 0 auto;
     filter: drop-shadow(0 0 60px #33cc7070);
